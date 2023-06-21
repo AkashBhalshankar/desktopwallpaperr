@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.container h4{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+}
+.quotes{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 15%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.quotes h2{
+    font-size: 45px;
+    margin-top: 10px;
+    font-weight: 500;
+     
+}
+.fluid{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 100px) and ( max-width: 1080px ) {
+    /* For mobile phones: */
+    .container h1{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: 43px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    .container h4{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    
+    }
+    .quotes{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 37%;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+    
+    }
+    .quotes h2{
+        font-size: 30px;
+        margin-top: 10px;
+        font-weight: 300;
+         
+    }
+
+    
+
+    
+  }

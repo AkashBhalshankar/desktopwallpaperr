@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desktop-time</title>
+</head>
+<body>
+    <div class="container">
+        <img class="fluid" src="bg.jpg" alt="bg">
+        <h1 id="current-time"></h1>
+        <h4 id="day"></h4>
+        <div class="quotes">
+            <p>TODAY'S QUOTES</p>
+            <h2>Lost time is never found again..!</h2>
+        </div>
+    </div>
+
+    <script>
+        let time = document.getElementById("current-time");
+        setInterval(() =>{
+            let d = new Date().toLocaleTimeString(navigator.language, {hour: '2-digit', minute: '2-digit',});
+        time.innerHTML = d;
+        let day = document.getElementById("day");
+        const fix = new Date().toUTCString().slice(5,16);
+        day.innerHTML =fix;
+
+        })
+
+    </script>
+    
+</body>
+
+</html>
